@@ -34,7 +34,7 @@
     </div>
 
 
-    <div class="hero" id = "hero">
+    <div class="hero section" id = "hero">
         <div class="banner">
             <p class = "small-txt">Hello, I'm</p>
             <h1 class = "title">Mark Reyes, I'm a <br>front-end developer</h1>
@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <div class="about-me-section" id = "about">
+    <div class="about-me-section hidden-section" id = "about">
         <div class="contents">
             <p class = "small-txt">A little bit</p>
             <p class = "title-txt">About me</p>
@@ -68,7 +68,7 @@
         
     </div>
 
-    <div class="skills-section" id = "skills">
+    <div class="skills-section hidden-section" id = "skills">
         <p class = "small-txt">List of my</p>
         <p class = "title-txt">Skills</p>
 
@@ -171,7 +171,7 @@
         </div>
     </div>
 
-    <div class="project-section" id = "projects">
+    <div class="project-section hidden-section" id = "projects">
         <p class = "small-txt">My recent</p>
         <p class = "title-txt">Projects</p>
 
@@ -213,7 +213,7 @@
         </div>
     </div>
 
-    <div class="contact-section" id = "contact">
+    <div class="contact-section hidden-section" id = "contact">
         <div class="contact-content">
             <div class="form-desc">
                 <p class = "small-txt">Contact</p>
@@ -243,7 +243,7 @@
     </div>
 
     
-    <footer>
+    <footer class = "hidden-section">
         <hr>
         <div class="f-contents">
             <div class="f-section">
@@ -326,7 +326,26 @@
             alert("Apologies for the inconvenience! Our contact form is temporarily unavailable. Please feel free to reach out to us via email instead. Thank you for your understanding!");
         }
 
+
+        // for onscroll animation
+        // create an observer to check if the sections are intersecting to each other
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                // console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-section');
+                }
+                // un-comment the else statement to play the animation over and over when scrolling 
+                // else {
+                //     entry.target.classList.remove('show-section');
+                // }
+            })
+        });
+
         
+        const hiddenSections = document.querySelectorAll('.hidden-section');
+        hiddenSections.forEach((el) => observer.observe(el));
+
     </script>
 
 </body>
