@@ -245,7 +245,7 @@ body {
     width: 90%;
 }
 
-.css, .javascript {
+.css, .javascript, .tailwind {
     width: 85%;
 }
 
@@ -253,7 +253,7 @@ body {
     width: 70%;
 }
 
-.bootstrap, .php, .mysql, .figma {
+.bootstrap, .php, .mysql, .figma, .react {
     width: 80%;
 }
 
