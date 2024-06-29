@@ -43,6 +43,18 @@ body {
     width: 100%;
     z-index: 3;
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(89%) saturate(7500%) hue-rotate(200deg) brightness(110%) contrast(110%);
+}
 
 .logo a {
     font-size: 1.5rem;
@@ -52,6 +64,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     color: black;
+    margin-left: 10px;
 }
 
 .nav ul {
