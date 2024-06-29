@@ -746,6 +746,15 @@ footer {
         margin-bottom: 100px;
     }
 
+    .logo img {
+        height: 48px;
+        width: 48px;
+    }
+
+    .logo a {
+        font-size: 1.25rem;
+    }
+
     .footer {
         padding: 0 0.5rem;
         margin-bottom: 40px;
