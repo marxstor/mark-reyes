@@ -666,7 +666,7 @@ footer {
         font-size: .875rem;
     }
     
-    input {
+    input, textarea {
         font-size: 1rem;
     }
 
@@ -719,6 +719,7 @@ footer {
 
     .about-me-section img {
         width: 100%;
+        margin-top: .875rem;
     }
 
     .about-me-section .contents {
@@ -734,7 +735,7 @@ footer {
     }
 
     .submitBtn {
-        font-size: 1rem;
+        font-size: .875rem;
     }
 }
 
