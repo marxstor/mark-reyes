@@ -1,0 +1,66 @@
+
+/* hero section */
+.hero {
+    padding: 4.5rem 0 6.25rem 6.25rem;
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.banner {
+    width: 60%;
+    margin-top: 240px;
+    z-index: 2;
+}
+
+.small-txt {
+    font-size: .875rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #756F6F;
+    letter-spacing: .2rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-family: "Helvetica-bold", Arial, sans-serif;
+}
+
+.sub-title { 
+    text-transform: none;
+    color: #505050;
+    margin-bottom: 2.25rem;
+    font-size: 1.375rem;
+}
+
+.profile img {
+    width: 720px;
+    top: -144px;
+    right: 56px;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    filter: drop-shadow(20px 2px 6px rgba(163, 163, 163, 1));
+}
+
+.btn-viewProject {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    padding: 14px 16px;
+    border-radius: 8px;
+    letter-spacing: .1rem;
+}
+
+.btn-viewProject:hover {
+    background-color: #505050;
+}

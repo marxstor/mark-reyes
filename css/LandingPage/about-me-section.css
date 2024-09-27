@@ -1,0 +1,33 @@
+
+/* about me section */
+.about-me-section {
+    padding: 6.25rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 120px;
+    margin-bottom: 140px;
+}
+
+.title-txt {
+    font-size: 3rem;
+    font-family: "Helvetica-bold", Arial, sans-serif;
+    margin-bottom: 1.875rem;
+}
+
+.about-me-section .contents {
+    width: 60%;
+}
+
+.about-desc {
+    font-size: 1.375rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+.about-me-section img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+}
