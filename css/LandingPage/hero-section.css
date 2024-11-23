@@ -11,7 +11,7 @@
 }
 
 .banner {
-    width: 60%;
+    width: 50%;
     margin-top: 240px;
     z-index: 2;
 }
@@ -31,14 +31,14 @@
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: 1rem;
-    font-family: "Helvetica-bold", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 .sub-title { 
     text-transform: none;
     color: #505050;
-    margin-bottom: 2.25rem;
-    font-size: 1.375rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
 }
 
 .profile img {

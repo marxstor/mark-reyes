@@ -36,6 +36,7 @@
 
 .proj-desc {
     color: #F5F5F5;
+    letter-spacing: 2px;
 }
 
 .proj-desc a {
@@ -80,9 +81,10 @@
 
 .proj-title {
     font-size: 1.25rem;
-    font-family: "Helvetica-bold", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     margin-bottom: 20px;
-    width: 60%
+    width: 60%;
+    font-weight: bold;
 }
 
 .desc-header {

@@ -4,15 +4,14 @@
 @import "LandingPage/project-section.css";
 @import "LandingPage/contact-section.css";
 
-@font-face {
+/* Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* @font-face {
     font-family: "Helvetica";
     src: url(Helvetica-Font/Helvetica.ttf);
-}
+} */
 
-@font-face {
-    font-family: "Helvetica-bold";
-    src: url(Helvetica-Font/Helvetica-Bold.ttf);
-}
 
 * {
     margin: 0;
@@ -36,7 +35,7 @@
 }
 
 body {
-    font-family: "Helvetica", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 .header {
@@ -81,7 +80,7 @@ body {
     list-style-type: none;
 }
 
-.nav a {
+.nav .nav-link {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -90,13 +89,29 @@ body {
     cursor: pointer;
 }
 
-.nav a:hover {
+.nav .nav-link:hover {
     border-bottom: 4px solid rgb(0, 0, 0);
 }
 
 .fa-bars-staggered, .fa-xmark {
     font-size: 1.5rem;
     padding: 8px 8px; 
+}
+
+.nav .contact-button {
+    background-color: black;
+    padding: 12px 14px;
+    color: white;
+    border-radius: 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    cursor: pointer;
+}
+
+.nav .contact-button:hover {
+    background-color: #505050;
 }
 
 .fa-xmark.hide {
@@ -123,8 +138,9 @@ footer {
 
 .f-header {
     font-size: 1.5rem;
-    font-family: "Helvetica-bold", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .f-sub-header {
@@ -182,7 +198,21 @@ footer {
 
 @media screen and (min-width: 1460px) {
     .header, .hero, .about-me-section, .skills-section, .project-section, .contact-section, footer {
-        padding: 0 12.5rem;
+        padding: 0 100px;
+    }
+    
+}
+
+@media screen and (min-width: 1520px) {
+    .header, .hero, .about-me-section, .skills-section, .project-section, .contact-section, footer {
+        padding: 0 200px;
+    }
+    
+}
+
+@media screen and (min-width: 1820px) {
+    .header, .hero, .about-me-section, .skills-section, .project-section, .contact-section, footer {
+        padding: 0 300px;
     }
     
 }

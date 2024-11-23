@@ -11,8 +11,9 @@
 
 .title-txt {
     font-size: 3rem;
-    font-family: "Helvetica-bold", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     margin-bottom: 1.875rem;
+    font-weight: bolder;
 }
 
 .about-me-section .contents {
@@ -28,6 +29,6 @@
 
 .about-me-section img {
     width: 500px;
-    height: 600px;
+    height: 720px;
     object-fit: cover;
 }
